@@ -1,0 +1,44 @@
+var a = document.getElementsByClassName(
+  "a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ojkyduve"
+)[1];
+var b = a.querySelector("strong");
+var sl = b.innerText.split(" ")[1] * 1;
+var el = document.getElementById("facebook");
+var i = 0;
+var j = parseInt((sl * 3) / 8 + sl * 0.15);
+var t1 = sl / 10;
+function scroll() {
+  i++;
+  window.scrollBy(0, 1000);
+  if (i <= j) {
+    scrolldelay = setTimeout(scroll, 100);
+    console.log(i);
+  }
+  return 1;
+}
+
+function getIF() {
+  var div = document.getElementsByClassName("b20td4e0 muag1w35")[
+    document.getElementsByClassName("b20td4e0 muag1w35").length - 1
+  ];
+  var di = div.querySelectorAll("a");
+  var i,
+    count = 0;
+  for (i = 0; i < di.length; i++) {
+    if (di[i].getAttribute("aria-label") != null) {
+      count++;
+      console.log(
+        "Name: " + di[i].getAttribute("aria-label") + "\t" + di[i].href
+      );
+    }
+  }
+}
+
+async function getKQ() {
+  await scroll();
+  setTimeout(getIF, j * 100 + t1 * 200);
+}
+getKQ();
+
+
+// clean code, tính time
