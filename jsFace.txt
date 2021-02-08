@@ -12,7 +12,6 @@ function scroll() {
   window.scrollBy(0, 1000);
   if (i <= j) {
     scrolldelay = setTimeout(scroll, 100);
-    console.log(i);
   }
   return 1;
 }
@@ -39,6 +38,3 @@ async function getKQ() {
   setTimeout(getIF, j * 100 + t1 * 200);
 }
 getKQ();
-
-
-// clean code, tính time
